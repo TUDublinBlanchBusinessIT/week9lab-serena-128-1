@@ -40,3 +40,4 @@ Route::resource('bookings', App\Http\Controllers\bookingController::class);
 //Route::get('/loggedInMember','App\Http\Controllers\memberController@getLoggedInMemberDetails');
 
 Route::get('/calendar/display','App\Http\Controllers\calendarController@display');
+Route::get('/calendar/json','App\Http\Controllers\CalendarController@json')->name('calendar.json');
