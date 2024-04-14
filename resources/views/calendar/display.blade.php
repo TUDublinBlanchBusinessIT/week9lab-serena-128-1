@@ -17,11 +17,10 @@
           plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction' ],
           header: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek' },
           slotDuration: '00:10:00',
-          defaultDate: '2019-08-01',
+          defaultDate: '2017-01-01',
           editable: true,
           eventLimit: true, // allow "more" link when too many events
-          events: [ { title: 'All Day Event', start: '2019-08-01' },
-                    { title: 'Long Event', start: '2019-08-07', end: '2019-08-10' } ]
+          events: '{{ route('calendar.json') }}'
      });
      calendar.render(); });
 </script>
